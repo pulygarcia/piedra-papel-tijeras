@@ -1,0 +1,127 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(21, 23, 43);
+    color: #fff;
+    text-align: center;
+}
+
+.container{
+    max-width: 40rem;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.heading{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 6rem;
+}
+
+.eleccion-titulo{
+    margin-top: 6rem;
+}
+
+.iconos{
+    display: flex;
+    justify-content: center;
+    gap: 1.8rem;
+    margin-top: 3.2rem;
+}
+
+.icono{
+    padding: 1.7rem;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #ff3333;
+    cursor: pointer;
+    animation-name: palpito;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/*animacion iconos*/
+@keyframes palpito {
+    0%{
+        transform: scale(1.0);
+    }
+
+    50%{
+        transform: scale(1.1);
+    }
+
+    100%{
+        transform: scale(1.0);
+    }
+}
+
+.icono img{
+    width: 5rem;
+}
+
+.resultado-titulo{
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+
+.resultado-titulo span{
+    display: block;
+}
+
+.victoria, .empate, .derrota{
+    font-weight: 700;
+    font-size: 3.6rem;
+    margin: 0;
+}
+
+.victoria{
+    color: rgb(38, 170, 38);
+}
+
+.empate{
+    color: #ffb205;
+}
+
+.derrota{
+    color: #d30808;
+}
+
+.parrafo-eleccion{
+    font-size: 2.5rem;
+}
+
+.footer{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 12rem;
+}
+
+.footer p{
+    text-transform: uppercase;
+    font-weight: 700;   
+}
+.footer p span{
+    text-transform: none;
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+.iconoRed{
+    transition: .2s ease;
+}
+
+.iconoRed:hover{
+    transform: scale(1.1);
+}
