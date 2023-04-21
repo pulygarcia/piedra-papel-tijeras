@@ -99,6 +99,20 @@ body{
     font-size: 2.5rem;
 }
 
+.repetir{
+    padding: 1rem 3rem;
+    border: 2px solid #ff3333;
+    border-radius: 1rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.repetir:hover{
+    background-color: #ff3333;
+    color: #fff;
+}
+
 .footer{
     text-align: center;
     display: flex;

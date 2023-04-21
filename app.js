@@ -96,7 +96,15 @@ function mostrarResultado(mensaje, eleccionComputadora, eleccionUsuario){
     resultadoEleccionUsuario.classList.add('parrafo-eleccion');
     resultadoEleccionUsuario.textContent = eleccionUsuario;
 
+    const volverJugar = document.createElement('BUTTON');
+    volverJugar.textContent = 'Volver a jugar';
+    volverJugar.classList.add('repetir');
+    volverJugar.onclick = function(){
+        window.location.reload();
+    }
+
     resultado.appendChild(resultadoParrafo);
     resultado.appendChild(resultadoEleccionPc);
     resultado.appendChild(resultadoEleccionUsuario);
+    resultado.appendChild(volverJugar);
 }
